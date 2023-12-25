@@ -1,10 +1,10 @@
 "use server";
 
+import { createElement } from "react";
 import { Resend } from "resend";
+import { ContactFormEmail } from "@/templates";
 import { getErrorMessage } from "./getErrorMessage";
 import { validateString } from "./validateString";
-import { ContactFormEmail } from "@/components/contact-form-email";
-import { createElement } from "react";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 const receiverEmail = process.env.RECEIVER_EMAIL || "";

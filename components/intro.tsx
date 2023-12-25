@@ -1,13 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
-import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useSectionInView } from "@/hooks/useSectionInView";
+import { HiDownload } from "react-icons/hi";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSectionInView } from "@/hooks/useSectionInView";
 
 export default function Intro() {
     const { ref } = useSectionInView({ sectionName: "Home", threshold: 0.5 });
@@ -95,6 +95,7 @@ export default function Intro() {
                     className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
                     href="https://linkedin.com/in/theahmadchand"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <BsLinkedin />
                 </a>
@@ -103,6 +104,7 @@ export default function Intro() {
                     className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
                     href="https://github.com/theahmadchand"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <FaGithubSquare />
                 </a>

@@ -1,10 +1,10 @@
 "use client";
 
 import { Fragment } from "react";
+import { useSectionInView } from "@/hooks/useSectionInView";
 import { projectsData } from "@/libs/data";
 import Project from "./project";
 import SectionHeading from "./section-heading";
-import { useSectionInView } from "@/hooks/useSectionInView";
 
 export default function Projects() {
     const { ref } = useSectionInView({ sectionName: "Projects", threshold: 0.5 });
