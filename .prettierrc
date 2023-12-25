@@ -1,0 +1,9 @@
+{
+  "tabWidth": 4,
+  "printWidth": 120,
+  "importOrder": [
+    "^@/(.*)$",
+    "^[./]"
+  ],
+  "importOrderSortSpecifiers": true
+}
